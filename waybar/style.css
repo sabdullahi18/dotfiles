@@ -1,0 +1,85 @@
+* {
+    font-family: "CaskaydiaCove Nerd Font", "Noto Sans CJK";
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+    min-height: 0;
+}
+
+#waybar {
+    background: rgba(30, 30, 46, 0.85);
+    color: #cdd6f4;       
+}
+
+#workspaces {
+    background-color: rgba(49, 50, 68, 0.9);
+    border-radius: 12px;
+    margin: 5px 0 5px 8px; 
+    padding: 0 5px;
+}
+
+#workspaces button {
+    color: #a6adc8; 
+    padding: 2px 8px;
+    background-color: transparent;
+    border-radius: 12px;
+}
+
+#workspaces button:hover {
+    background-color: #45475a;
+}
+
+#workspaces button.active {
+    background-color: #f5c2e7; 
+    color: #11111b;           
+}
+
+#custom-spotify {
+	background-color: rgba(49, 50, 68, 0.9);
+	color: #f5c2e7;
+	border-radius: 12px;
+	padding: 2px 12px;
+	margin: 5px 0 5px 8px;
+}
+
+#bluetooth,
+#tray,
+#backlight,
+#network,
+#pulseaudio,
+#battery,
+#clock {
+    background-color: rgba(49, 50, 68, 0.9);
+    color: #a6adc8; 
+    padding: 2px 8px;
+    margin: 5px 0;
+}
+
+#tray {
+	border-top-left-radius: 12px;
+	border-bottom-left-radius: 12px;
+}
+
+#clock {
+	border-top-right-radius: 12px;
+	border-bottom-right-radius: 12px;
+	margin-right: 8px;
+}
+
+#network:hover,
+#bluetooth:hover,
+#pulseaudio:hover,
+#backlight:hover,
+#battery:hover,
+#clock:hover {
+    background-color: #45475a;
+}
+
+#pulseaudio.muted,
+#battery.critical:not(.charging) {
+    color: #f38ba8;
+}
+
+#battery.charging, #battery.plugged {
+    color: #a6e3a1;
+}

@@ -1,0 +1,110 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 32,
+  "spacing": 0,
+  "modules-left": [
+    "hyprland/workspaces",
+    "custom/spotify"
+  ],
+  "modules-right": [
+      "tray",
+    "pulseaudio",
+    "backlight",
+    "network",
+    "bluetooth",
+    "battery",
+    "clock"
+  ],
+  "tray": {
+      "icon-size": 18,
+      "spacing": 10,
+  },
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "on-click": "activate",
+    "persistent-workspaces": {}
+  },
+  "network": {
+    "format-wifi": "<span color='#f5c2e7'> 󰤨 </span> ",
+    "format-ethernet": "<span color='#f5c2e7'> </span> ",
+    "tooltip-format-wifi": "Connected to {essid} ({signalStrength}%)\n<span color='#FF1493'>󰅧</span> {bandwidthUpBytes} | <span color='#00BFFF'>󰅢</span> {bandwidthDownBytes}",
+    "tooltip-format-ethernet": "Connected via {ifname} ({ipaddr})\n󰅧 {bandwidthUpBytes} | 󰅢 {bandwidthDownBytes}",
+    "tooltip-format-disconnected": "Disconnected",
+    "format-linked": "<span color='#f5c2e7'> 󱘖 </span>{ifname} (No IP) ",
+    "format-disconnected": "<span color='#FF4040'>  </span> ",
+    "format-alt": "<span color='#f5c2e7'> 󰤨 </span> ",
+    "interval": 1
+  },
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "<span color='#a6e3a1'> {icon} </span>{capacity}% ",
+    "format-charging": " 󱐋{capacity}%",
+	  "interval": 1,
+    "format-icons": ["󰂎", "󰁼", "󰁿", "󰂁", "󰁹"],
+    "tooltip": true
+  },
+  "pulseaudio": {
+    "format": "<span color='#f5c2e7'>{icon}</span> ",
+    "format-muted": "<span color='#FF4040'> 󰖁 </span> ",
+    "format-icons": {
+      "headphone": "<span color='#f5c2e7'>  </span>",
+      "hands-free": "<span color='#f5c2e7'>  </span>",
+      "headset": "<span color='#f5c2e7'>  </span>",
+      "phone": "<span color='#f5c2e7'>  </span>",
+      "portable": "<span color='#f5c2e7'>  </span>",
+      "default": [
+        "<span color='#808080'>  </span>",
+        "<span color='#FFFF66'>  </span>",
+        "<span color='#a6e3a1'>  </span>"
+      ]
+    },
+    "on-click-right": "pavucontrol -t 3",
+    "on-click": "pactl -- set-sink-mute 0 toggle",
+    "tooltip": true,
+    "tooltip-format": "{volume}%"
+  },
+  "clock": {
+    "interval": 1,
+    "locale": "ru_RU.UTF-8",
+    "timezone": "Europe/London",
+    "format": "{:L%A %d %B %H:%M:%S} "
+  },
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "<span color='#FFD700'>{icon}</span> ",
+    "tooltip": true,
+    "tooltip-format": "{percent}%",
+    "format-icons": [
+      "<span color='#696969'> 󰃞 </span>",  
+      "<span color='#A9A9A9'> 󰃝 </span>",  
+      "<span color='#FFFF66'> 󰃟 </span>",  
+      "<span color='#FFD700'> 󰃠 </span>"   
+    ]
+  },
+  "bluetooth": {
+    "format": "<span color='#f5c2e7'></span>",
+    "format-disabled": "<span color='#888888'></span>",
+    "format-off": "<span color='#888888'></span>",    
+    "format-connected": "<span color='#f5c2e7'></span>",
+    "tooltip": true,
+    "tooltip-format": "{controller_alias}\t{controller_address}",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected devices:\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "  - {device_alias} ({device_address})",
+    "tooltip-format-enumerate-connected-battery": "  - {device_alias} ({device_address}) -  {device_battery_percentage}%"
+  },
+  "custom/spotify": {
+    "exec": "~/.config/waybar/mediaplayer.py",
+    "format": "{}",
+    "rotate": 0,
+    "return-type": "json",
+    "on-click": "playerctl play-pause --player spotify",
+    "on-click-middle": "playerctl stop --player spotify",
+    "tooltip": true
+  }
+}
+

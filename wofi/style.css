@@ -1,0 +1,53 @@
+#window {
+    font-family: "CaskaydiaCove Nerd Font", "Noto Sans CJK";
+    background-color: rgba(30, 30, 46, 0.85); 
+    color: #f2f2f2;
+    border-radius: 10px;
+    border: 2px solid rgba(245,194,231,1);
+}
+
+#input {
+    background-image: linear-gradient(rgba(26, 26, 26, 0.6), rgba(26, 26, 26, 0.6)), url('/home/sara/.config/wofi/japan.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: #f2f2f2;
+    padding: 100px;
+    margin: 12px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#inner-box {
+    margin: 0 12px;
+}
+
+#outer-box {
+    padding-bottom: 12px;
+}
+
+#scroll {
+    border: none;
+}
+
+#entry {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+#entry:selected {
+    background: linear-gradient(45deg, rgba(245, 194, 231, 1), rgba(251, 111, 146, 1));
+    color: #282a36;
+    outline: none;
+}
+
+#text {
+    margin-left: 10px;
+}
+
+#img {
+    margin-right: 10px;
+}
