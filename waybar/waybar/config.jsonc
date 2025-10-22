@@ -1,7 +1,7 @@
 {
   "layer": "top",
   "position": "top",
-  "height": 32,
+  "height": 25,
   "spacing": 0,
   "modules-left": [
     "hyprland/workspaces",
@@ -17,7 +17,7 @@
     "clock"
   ],
   "tray": {
-      "icon-size": 18,
+      "icon-size": 15,
       "spacing": 10,
   },
   "hyprland/workspaces": {
