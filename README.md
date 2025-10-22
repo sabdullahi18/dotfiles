@@ -1,5 +1,4 @@
 ### Things to do
-- change waybar so it's narrower
 - install discord
 - install steam
 - move stuff in documents folder somewhere else
