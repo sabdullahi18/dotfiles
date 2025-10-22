@@ -96,6 +96,10 @@ if ! fprintd-list $(whoami) | grep -q "finger"; then
     
     sudo sed -i \
         -e '2i\auth sufficient pam_fprintd.so' \
+        "/etc/pam.d/system-auth"
+    
+    sudo sed -i \
+        -e '2i\auth sufficient pam_fprintd.so' \
         "/etc/pam.d/su"
     
     sudo sed -i \

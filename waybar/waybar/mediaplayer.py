@@ -237,7 +237,7 @@ def main():
     prefix_playing = ""
     prefix_paused = "  "
     max_length = 40 
-    standby_text = " Music"
+    standby_text = " музыка"
     artist_track_separator = "  "
 
     artist_color = "#CCCCCC"
