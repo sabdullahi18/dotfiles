@@ -1,3 +1,0 @@
-ohmyzsh/ohmyzsh plugins/git
-ohmyzsh/ohmyzsh plugins/colored-man-pages
-rupa/z

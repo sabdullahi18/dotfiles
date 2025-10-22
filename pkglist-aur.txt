@@ -1,12 +1,7 @@
-amdvlk
 anki
 clipse
-hyprwayland-scanner-git
-lib32-amdvlk
 notion-app-electron
 phonon-qt6-mpv
-spotify
 teams
 yay
-yay-debug
 zsh-antidote

@@ -1,5 +1,4 @@
 alsa-utils
-anki
 base
 base-devel
 bind
@@ -8,7 +7,6 @@ bluez
 bluez-deprecated-tools
 bluez-utils
 brightnessctl
-clipse
 dolphin
 efibootmgr
 fastfetch
@@ -44,7 +42,6 @@ neovim
 network-manager-applet
 networkmanager
 newsboat
-notion-app-electron
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
@@ -66,12 +63,9 @@ python-gobject
 qt5-wayland
 sof-firmware
 speech-dispatcher
-spotify
 starship
-steam
 swaync
 sysstat
-teams
 tela-circle-icon-theme-pink
 thefuck
 tmux
@@ -84,7 +78,5 @@ wget
 wireplumber
 wofi
 xdg-desktop-portal-hyprland
-yay
-yay-debug
 zram-generator
 zsh
