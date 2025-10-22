@@ -1,7 +1,7 @@
 * {
     font-family: "CaskaydiaCove Nerd Font", "Noto Sans CJK";
     font-weight: bold;
-    font-size: 14px;
+    font-size: 12px;
     border: none;
     min-height: 0;
 }
@@ -14,13 +14,13 @@
 #workspaces {
     background-color: rgba(49, 50, 68, 0.9);
     border-radius: 12px;
-    margin: 5px 0 5px 8px; 
-    padding: 0 5px;
+    margin: 5px 2px 5px 8px; 
+    padding: 0 2px;
 }
 
 #workspaces button {
     color: #a6adc8; 
-    padding: 2px 8px;
+    padding: 2px 4px;
     background-color: transparent;
     border-radius: 12px;
 }
@@ -39,11 +39,10 @@
 	color: #f5c2e7;
 	border-radius: 12px;
 	padding: 2px 12px;
-	margin: 5px 0 5px 8px;
+	margin: 5px 2px 5px 0px;
 }
 
 #bluetooth,
-#tray,
 #backlight,
 #network,
 #pulseaudio,
@@ -51,13 +50,27 @@
 #clock {
     background-color: rgba(49, 50, 68, 0.9);
     color: #a6adc8; 
-    padding: 2px 8px;
-    margin: 5px 0;
+    padding: 2px 2px;
+    margin: 5px 0px 5px 0;
+}
+
+#tray {
+    background-color: rgba(49, 50, 68, 0.9);
+    color: #a6adc8; 
+    padding: 2px 0px;
+    margin: 5px 2px 5px 0;
+}
+
+#pulseaudio {
+	border-top-left-radius: 12px;
+	border-bottom-left-radius: 12px;
 }
 
 #tray {
 	border-top-left-radius: 12px;
 	border-bottom-left-radius: 12px;
+	border-top-right-radius: 12px;
+	border-bottom-right-radius: 12px;
 }
 
 #clock {

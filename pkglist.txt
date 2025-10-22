@@ -11,6 +11,7 @@ dolphin
 efibootmgr
 fastfetch
 firefox
+fprintd
 fuse2
 fzf
 git
@@ -30,6 +31,7 @@ hyprutils
 imagemagick
 jq
 kitty
+libfprint
 libpulse
 linux
 linux-firmware
@@ -64,6 +66,7 @@ qt5-wayland
 sof-firmware
 speech-dispatcher
 starship
+steam
 swaync
 sysstat
 tela-circle-icon-theme-pink

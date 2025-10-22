@@ -5,10 +5,10 @@
   "spacing": 0,
   "modules-left": [
     "hyprland/workspaces",
+    "tray",
     "custom/spotify"
   ],
   "modules-right": [
-      "tray",
     "pulseaudio",
     "backlight",
     "network",
@@ -72,10 +72,10 @@
     "interval": 1,
     "locale": "ru_RU.UTF-8",
     "timezone": "Europe/London",
-    "format": "{:L%A %d %B %H:%M:%S} "
+    "format": "{:L%d %B %H:%M:%S} "
   },
   "backlight": {
-    "device": "intel_backlight",
+    "device": "amdgpu_bl1",
     "format": "<span color='#FFD700'>{icon}</span> ",
     "tooltip": true,
     "tooltip-format": "{percent}%",
