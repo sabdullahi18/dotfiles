@@ -13,7 +13,7 @@ return {
 			yaml = { "prettierd" },
 			markdown = { "prettierd" },
 			lua = { "stylua" },
-			python = { "isort", "black" },
+			python = { "black" },
 			haskell = { "ormolu" },
 			java = { "google-java-format" },
 			_default = { "trim_whitespace" },
